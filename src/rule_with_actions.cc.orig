@@ -495,4 +495,5 @@ std::string RuleWithActions::getLogData(Transaction *t) const { return m_logData
 std::string RuleWithActions::getMessage(Transaction *t) const { return m_msg->getEvaluatedRunTimeString(t); }
 
 
+
 }  // namespace modsecurity

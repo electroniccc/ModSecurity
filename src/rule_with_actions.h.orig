@@ -444,14 +444,6 @@ class RuleWithActions : public Rule {
         return m_chainedRuleParent;
     }
 
-    XmlNSs getXmlNSs() const {
-        XmlNSs dst;
-        for (auto &a : m_XmlNSs) {
-            dst.push_back(a);
-        }
-        return dst;
-    }
-
     XmlNSsPtr getXmlNSsPtr() const {
         /**
          * FIXME: this is not conteplating SecRuleUpdateActionBy* yet.
