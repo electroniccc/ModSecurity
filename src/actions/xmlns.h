@@ -42,7 +42,7 @@ class XmlNS : public Action {
     { };
 
 
-    bool execute(RuleWithActions *rule, Transaction *transaction) override {
+    bool execute(Transaction *transaction) override {
         return true;
     }
 
